@@ -5,9 +5,6 @@ import { Fade } from "react-reveal";
 import founder1 from "./../../assets/img/2.png";
 import founder2 from "./../../assets/img/3.png";
 import founder3 from "./../../assets/img/4.png";
-import founder4 from "./../../assets/img/152.png";
-import founder5 from "./../../assets/img/159.png";
-import founder6 from "./../../assets/img/276.png";
 
 const Founders = () => {
   return (
