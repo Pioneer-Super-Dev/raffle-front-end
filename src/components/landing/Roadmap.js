@@ -23,7 +23,7 @@ const Roadmap = () => {
                 fontWeight: "bold",
               }}
             >
-              <strong>The Space Koalas NFT Roadmap</strong>
+              <strong>The Soul Survivors NFT Roadmap</strong>
               <br />
             </h1>
             <h5
@@ -33,7 +33,7 @@ const Roadmap = () => {
               }}
             >
               <strong>
-                Reports of a few Space Koalas spotted in the metaverse.
+                Reports of a few Soul Survivors spotted in the metaverse.
               </strong>
               <br />
               <strong>Here's your compass for the journey...</strong>

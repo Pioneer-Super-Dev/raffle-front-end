@@ -18,7 +18,7 @@ const Introduce = () => {
                 fontFamily: "'Comic Neue', serif",
               }}
             >
-              <h1 style={{ fontWeight: "bold" }}>Space Koalas</h1>
+              <h1 style={{ fontWeight: "bold" }}>Soul Survivors</h1>
               <h5
                 style={{
                   color: "#10f2d7",
@@ -26,21 +26,22 @@ const Introduce = () => {
                   textShadow: "1px 1px var(--bs-blue)",
                 }}
               >
-                What is Space Koalas?
+                What is Soul Survivors?
                 <br />
               </h5>
               <p>
-                Space-Koalas is a collection of 9,999 unique, well-designed
-                Koalas NFT's based on the Etherium Blockchain. The 9,999 NFT's
-                are divided into different rarity levels.Each Space Koala is
-                unique and exclusive based on up to 50 characteristics. The goal
-                is to generate a uniquely strong community to grow the project
-                with the community afterwards.
+                Cras ultricies ligula sed magna dictum porta. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec velit neque, auctor sit amet
+                aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Donec velit neque, auctor sit amet aliquam vel,
+                ullamcorper sit amet ligula.
                 <br />
                 <br />
-                Joining the Space-Koala community means joining a family full of
-                investors and NFT enthusiasts who believe in the future of
-                cryptocurrencies and blockchain technology.
+                Sed porttitor lectus nibh. Praesent sapien massa, convallis a
+                pellentesque nec, egestas non nisi.
                 <br />
               </p>
             </div>

@@ -48,20 +48,21 @@ const Collection = () => {
                 <br />
               </h5>
               <p>
-                When you buy a Space-Koala, you're not just buying a simple NFT,
-                you're getting Access to a community where the benefits and
-                advantages increase over time. <br />
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum
+                ac diam sit amet quam vehicula elementum sed sit amet dui.
+                Curabitur aliquet quam id dui posuere blandit. <br />
                 <br />
-                Want to see your koala in space? Your koala has a chance to go
-                on a space flight. He will take his best friend with him. Are
-                you his best friend?
-                <br />
-                Furthermore, five NFT koalas will fly to Australia to visit a
-                sanctuary. Again, each koala will take his best friend with him.{" "}
-                <br />
-                <br />
-                We will support this sanctuary with a share of the profits from
-                our project. <br />
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum
+                ac diam sit amet quam vehicula elementum sed sit amet dui.
+                Curabitur aliquet quam id dui posuere blandit. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Donec velit neque, auctor sit amet aliquam vel,
+                ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl
+                tempus convallis quis ac lectus. Donec rutrum congue leo eget
+                malesuada. Vivamus suscipit tortor eget felis porttitor
+                volutpat.
               </p>
               <h5
                 style={{
@@ -74,9 +75,8 @@ const Collection = () => {
                 <br />
               </h5>
               <p>
-                If you are lucky enough to mint one of our rare NFTs, you can
-                realise 2, 5, maybe even 10 times the value of your investment
-                within a few days.
+                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
+                tincidunt.
                 <br />
               </p>
               <h5
@@ -90,9 +90,8 @@ const Collection = () => {
                 <br />
               </h5>
               <p>
-                NFT holders gain access to our community resources, which are
-                used to actively develop the project. In the process,
-                implemented project ideas benefit the community.
+                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
+                tincidunt.
                 <br />
               </p>
               <h5
@@ -106,12 +105,8 @@ const Collection = () => {
                 <br />
               </h5>
               <p>
-                Space koala owners can breed their koalas to create a 2nd
-                generation koala. Remember that you need a total of 2
-                Space-Koalas to breed. <br />
-                Small perspective: Possible to breed mutants using
-                contaminated/burnt eucalyptus.
-                <br />
+                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
+                tincidunt.
               </p>
             </div>
           </div>
