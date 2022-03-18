@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { connect } from "../../redux/blockchain/blockchainActions";
+import { fetchData } from "../../redux/data/dataActions";
+
 import {
   InputGroup,
   FormControl,
@@ -12,8 +16,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
 // We import the contract's artifacts and address here, as we are going to be
 // using them with ethers
-import TokenArtifact from "../../contracts/NFT.json";
-import contractAddress from "../../contracts/contract-address.json";
 import koala_gif from "./../../assets/img/logo 03.png";
 // For Live Server(ethereum) :  1
 // For Test(rinkeby)         : 4
@@ -22,8 +24,13 @@ const AlchemyWeb3URL =
   "https://eth-rinkeby.alchemyapi.io/v2/gdOvJjVNmQ6fAqIZ46sy7uTYW-Is7-Kl";
 
 const Mint = () => {
+  const dispatch = useDispatch();
+  const blockchain = useSelector((state) => state.blockchain);
+  const data = useSelector((state) => state.data);
+  const [claimingNft, setClaimingNft] = useState(false);
+
   useEffect(() => {
-    getTotalSupply();
+    // getTotalSupply();
   });
 
   const [address, setAddress] = useState(null);
@@ -31,97 +38,99 @@ const Mint = () => {
   const [mintedCount, setMintedCount] = useState(0);
   const [mintCount, setMintCount] = useState(1);
   const [isLoading, setLoading] = useState(false);
+  const [hash, setHash] = useState("");
 
-  const connectWallet = async () => {
-    const [userAddress] = await window.ethereum.enable();
-    setAddress(userAddress);
+  // const connectWallet = async () => {
+  //   const [userAddress] = await window.ethereum.enable();
+  //   setAddress(userAddress);
+  // };
+
+  const walletConnect = (e) => {
+    e.preventDefault();
+    dispatch(connect());
+    // getData();
   };
 
-  const getTotalSupply = async () => {
-    const web3 = createAlchemyWeb3(AlchemyWeb3URL);
-    const token = new web3.eth.Contract(
-      TokenArtifact.abi,
-      contractAddress.Token
-    );
-    const totalSupply = await token.methods.totalSupply().call();
-    setMintedCount(totalSupply);
+  const getData = () => {
+    dispatch(fetchData(blockchain.account));
   };
 
-  const mint = async () => {
-    setLoading(true);
-    if (!checkNetwork()) {
-      setLoading(false);
-      return;
-    }
-    const web3 = createAlchemyWeb3(AlchemyWeb3URL);
+  // const getTotalSupply = async () => {
+  //   const web3 = createAlchemyWeb3(AlchemyWeb3URL);
+  //   const token = new web3.eth.Contract(
+  //     TokenArtifact.abi,
+  //     contractAddress.Token
+  //   );
+  //   const totalSupply = await token.methods.totalSupply().call();
+  //   setMintedCount(totalSupply);
+  // };
 
-    const token = new web3.eth.Contract(
-      TokenArtifact.abi,
-      contractAddress.Token
-    );
+  // const mint = async () => {
+  //   setLoading(true);
+  //   if (!checkNetwork()) {
+  //     setLoading(false);
+  //     return;
+  //   }
+  //   const web3 = createAlchemyWeb3(AlchemyWeb3URL);
 
-    token.methods
-      .mint(address, mintCount)
-      .send({
-        gasLimit: 285000 * mintCount,
-        to: contractAddress.Token, // the address of your contract
-        from: address,
-        value: mintPrice * mintCount,
-        // "value": 100000000 * mintCount,
-      })
-      .once("error", (err) => {
-        setLoading(false);
-        console.log(
-          err,
-          "EEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRROOOOOOOOOOOOOOOOOOORRRRRRRRRRRRRR"
-        );
-      })
-      .then(async (receipt) => {
-        setLoading(false);
-        // const event = receipt.events;
-        toast.success("Mint Success!", {
-          position: "top-right",
-          autoClose: 4000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
+  //   const token = new web3.eth.Contract(
+  //     TokenArtifact.abi,
+  //     contractAddress.Token
+  //   );
 
-        getTotalSupply();
-      }); // Minting the token
-  };
-  const loadingSpinner = (
-    <Spinner
-      as="span"
-      animation="border"
-      size="sm"
-      role="status"
-      aria-hidden="true"
-    />
-  );
+  //   token.methods
+  //     .mint(address, mintCount)
+  //     .send({
+  //       gasLimit: 285000 * mintCount,
+  //       to: contractAddress.Token, // the address of your contract
+  //       from: address,
+  //       value: mintPrice * mintCount,
+  //       // "value": 100000000 * mintCount,
+  //     })
+  //     .once("error", (err) => {
+  //       setLoading(false);
+  //       console.log(
+  //         err,
+  //         "EEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRROOOOOOOOOOOOOOOOOOORRRRRRRRRRRRRR"
+  //       );
+  //     })
+  //     .then(async (receipt) => {
+  //       setLoading(false);
+  //       // const event = receipt.events;
+  //       toast.success("Mint Success!", {
+  //         position: "top-right",
+  //         autoClose: 4000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //       });
+
+  //       getTotalSupply();
+  //     }); // Minting the token
+  // };
 
   // This method checks if Metamask selected network is Localhost:8545
-  const checkNetwork = () => {
-    if (window.ethereum.networkVersion === Allowed_NETWORK_ID) {
-      return true;
-    }
-    toast.error("Please connect Metamask to RinkeBy!", {
-      position: "top-right",
-      autoClose: 4000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-    return false;
-  };
+  // const checkNetwork = () => {
+  //   if (window.ethereum.networkVersion === Allowed_NETWORK_ID) {
+  //     return true;
+  //   }
+  //   toast.error("Please connect Metamask to RinkeBy!", {
+  //     position: "top-right",
+  //     autoClose: 4000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //   });
+  //   return false;
+  // };
 
   const connectWalletBtn = (
     <button
-      onClick={connectWallet}
+      onClick={walletConnect}
       className="btn portofolio_connect_btn mt-3"
       data-bss-hover-animate="bounce"
       type="button"
@@ -139,11 +148,55 @@ const Mint = () => {
       Connect Wallet
     </button>
   );
+
+  const mint = (e) => {
+    e.preventDefault();
+
+    if (hash == "") {
+      toast.error("Input Hash", { theme: "colored" });
+      return;
+    }
+
+    const _amount = 1;
+    setClaimingNft(true);
+
+    blockchain.smartContract.methods
+      .mintNewToken(mintCount, hash)
+      // ********
+      // You can change the line above to
+      // .whiteListMint(blockchain.account, _amount) if you want only whitelisted
+      // users to be able to mint through your website!
+      // And after you're done with whitelisted users buying from your website,
+      // You can switch it back to .mint(blockchain.account, _amount).
+      // ********
+      .send({
+        gasLimit: 285000,
+        to: "0x2529ce9e2e17D68744D3245071F8D2e1aF145666", // the address of your contract
+        from: blockchain.account,
+      })
+      .once("error", (err) => {
+        console.log(err);
+        toast.error(
+          "Sorry, something went wrong. Check your transaction on Bscscan to find out what happened!",
+          { theme: "colored" }
+        );
+        setClaimingNft(false);
+      })
+      .then((receipt) => {
+        console.log(receipt);
+        toast.success("NFT has been successfully minted!", {
+          theme: "colored",
+        });
+        setClaimingNft(false);
+        // dispatch(fetchData(blockchain.account));
+      });
+  };
+
   const mintNFTBtn = (
     <div>
-      <p style={{ color: "white" }}>Connected Address: {address}</p>
+      <p style={{ color: "white" }}>Connected Address: {blockchain.account}</p>
       <button
-        // onClick={mint}
+        onClick={mint}
         className="btn btn-primary portofolio_mint_btn mt-1"
         data-bss-hover-animate="bounce"
         disabled={isLoading}
@@ -157,10 +210,27 @@ const Mint = () => {
           fontSize: "18px",
         }}
       >
-        {isLoading ? loadingSpinner : ""}Mint NFT
+        {claimingNft ? (
+          <span>
+            Minting...
+            <Spinner
+              as="span"
+              animation="border"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+            />
+          </span>
+        ) : (
+          "Mint NFT"
+        )}
       </button>
     </div>
   );
+
+  const onHashChange = (e) => {
+    setHash(e.target.value);
+  };
 
   return (
     <section className="portfolio-block block-intro portfolio-bg">
@@ -183,7 +253,8 @@ const Mint = () => {
                 {mintPrice / Math.pow(10, 18)} ETH + Gas Fee
               </p> */}
               <FormControl
-                onChange={(e) => {}}
+                value={hash}
+                onChange={onHashChange}
                 placeholder="Input Pinata Hash please"
                 className="me-2 mb-5 rounded-0 border-primary mint-counter-input"
               />
@@ -275,12 +346,12 @@ const Mint = () => {
                   </Button>
                 </ButtonGroup>
               </ButtonToolbar>
-              {address ? mintNFTBtn : connectWalletBtn}
+              {blockchain.account == null ? connectWalletBtn : mintNFTBtn}
             </div>
           </div>
         </div>
       </div>
-      {/* <ToastContainer /> */}
+      <ToastContainer />
     </section>
   );
 };
