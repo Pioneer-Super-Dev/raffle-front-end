@@ -78,7 +78,8 @@ const Faq = () => {
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          The Price of Minting will be 0.1ETH + Gas Fees.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -97,7 +98,8 @@ const Faq = () => {
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          Your can mint a max. of 5pcs per Wallet.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -116,8 +118,8 @@ const Faq = () => {
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          Our Whitelist is still open, you can check all the
-                          info on our discord.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -132,12 +134,12 @@ const Faq = () => {
                           fontWeight: "bold",
                         }}
                       >
-                        WHERE I WILL BE ABLE TO SEE MY SPACE KOALA NFT?
+                        WHERE I WILL BE ABLE TO SEE SOUL SURVIVORS NFT?
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          Once you have minted a SPACE KOALA NFT, you will be
-                          able to see it by connecting your wallet to OpenSea.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -152,12 +154,12 @@ const Faq = () => {
                           fontWeight: "bold",
                         }}
                       >
-                        HOW I CAN BUY A SPACE KOALAS NFT?
+                        HOW I CAN BUY A SOUL SURVIVORS NFT?
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          You will be able to buy only on our website when we
-                          launch.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -172,13 +174,12 @@ const Faq = () => {
                           fontWeight: "bold",
                         }}
                       >
-                        WHY SPACE KOALAS?
+                        WHY SOUL SURVIVORS?
                       </Accordion.Header>
                       <Accordion.Body className="accordion-collapse collapse show item-1">
                         <p className="mb-0">
-                          When you buy a SPACE KOALA, you’re not simply buying a
-                          simple NFT, you are getting a chance to fly with your
-                          NFT-Koala into the space.
+                          Sed porttitor lectus nibh. Sed porttitor lectus nibh.
+                          Donec sollicitudin molestie malesuada.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -188,7 +189,7 @@ const Faq = () => {
                   <h5 style={{ fontFamily: "'Comic Neue', serif" }}>
                     <strong>Haven’t got your answer?&nbsp;</strong>
                     <a
-                      href="https://twitter.com/spacekoalasnft"
+                      href="https://twitter.com/soulsurvivors"
                       target={"_blank"}
                       rel="noreferrer"
                     >
