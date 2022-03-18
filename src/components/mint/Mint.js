@@ -195,22 +195,21 @@ const Mint = () => {
   const mintNFTBtn = (
     <div>
       <p style={{ color: "white" }}>Connected Address: {blockchain.account}</p>
-      <button
-        onClick={mint}
-        className="btn btn-primary portofolio_mint_btn mt-1"
-        data-bss-hover-animate="bounce"
-        disabled={isLoading}
-        type="button"
-        style={{
-          borderRadius: "5px",
-          background: "#0ea0ff !important",
-          borderBottom: "#0d6efd solid 5px",
-          fontWeight: "bold",
-          height: "70px",
-          fontSize: "18px",
-        }}
-      >
-        {claimingNft ? (
+      {claimingNft ? (
+        <button
+          className="btn btn-primary portofolio_mint_btn mt-1"
+          data-bss-hover-animate="bounce"
+          disabled={isLoading}
+          type="button"
+          style={{
+            borderRadius: "5px",
+            background: "#0ea0ff !important",
+            borderBottom: "#0d6efd solid 5px",
+            fontWeight: "bold",
+            height: "70px",
+            fontSize: "18px",
+          }}
+        >
           <span>
             Minting...
             <Spinner
@@ -221,10 +220,26 @@ const Mint = () => {
               aria-hidden="true"
             />
           </span>
-        ) : (
-          "Mint NFT"
-        )}
-      </button>
+        </button>
+      ) : (
+        <button
+          onClick={mint}
+          className="btn btn-primary portofolio_mint_btn mt-1"
+          data-bss-hover-animate="bounce"
+          disabled={isLoading}
+          type="button"
+          style={{
+            borderRadius: "5px",
+            background: "#0ea0ff !important",
+            borderBottom: "#0d6efd solid 5px",
+            fontWeight: "bold",
+            height: "70px",
+            fontSize: "18px",
+          }}
+        >
+          Mint NFT
+        </button>
+      )}
     </div>
   );
 
