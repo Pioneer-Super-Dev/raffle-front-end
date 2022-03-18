@@ -64,13 +64,10 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    Our goal is to generate a harmonious community. Therefore,
-                    our top priority is to make your investment and our NFT's as
-                    successful as possible. +For this reason, we will only
-                    release our NFT's when we think they are of the best
-                    possible quality. We will also not announce our drop release
-                    date until we are also satisfied with the technical parts of
-                    the project.
+                    Quisque velit nisi, pretium ut lacinia in, elementum id
+                    enim. Praesent sapien massa, convallis a pellentesque nec,
+                    egestas non nisi. Mauris blandit aliquet elit, eget
+                    tincidunt nibh pulvinar a.
                     <br />
                   </h5>
                 </div>
@@ -104,7 +101,7 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    After the date is announced, we will start a 7-day timer.
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                     <br />
                   </h5>
                 </div>
@@ -138,10 +135,7 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    A week after the release date was announced. To celebrate
-                    the achievement of our goals, we will organize a spaced
-                    party for our owners. The community will choose the
-                    location.
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                     <br />
                   </h5>
                 </div>
@@ -165,14 +159,11 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    We will donate 10 percent of profits to a koala
-                    sanctuary/foundation. This is located in Australia.
-                    Unfortunately, the koalas are repeatedly badly affected by
-                    bush fires. This money is intended to help the koalas
-                    directly. Be it in koala sanctuaries or in reforestation.
-                    <br />
-                    We are currently still in talks with various foundations. We
-                    will announce a link on our homepage as soon as possible.
+                    Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget
+                    consectetur sed, convallis at tellus. Vestibulum ante ipsum
+                    primis in faucibus orci luctus et ultrices posuere cubilia
+                    Curae; Donec velit neque, auctor sit amet aliquam vel,
+                    ullamcorper sit amet ligula.
                   </h5>
                 </div>
               </Fade>
@@ -205,20 +196,11 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    We undertake to implement the project in the best possible
-                    way and to integrate project ideas from the communities in
-                    the best possible way. We will then also reward these
-                    project ideas.
-                    <br />
-                    <br />
-                    Those who will own at least two space koalas will have the
-                    opportunity to further develop their space koalas (Mechas,
-                    Goldenline, Mutants via Plagued Eucalyptus...&nbsp;... - in
-                    consultation with the community)
-                    <br />
-                    Part 2 will be announced (among other things in consultation
-                    with the largest space koala holders)
-                    <br />
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Donec rutrum congue leo eget malesuada. Nulla quis
+                    lorem ut libero malesuada feugiat. Vestibulum ac diam sit
+                    amet quam vehicula elementum sed sit amet dui. Curabitur
+                    arcu erat, accumsan id imperdiet et, porttitor at sem.
                   </h5>
                 </div>
               </Fade>
@@ -241,9 +223,9 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    Our designers are already working on the development of the
-                    3D Koalas. However, the 3D koalas will only come after the
-                    mutants/... on the market.
+                    Pellentesque in ipsum id orci porta dapibus. Pellentesque in
+                    ipsum id orci porta dapibus. Nulla porttitor accumsan
+                    tincidunt.
                   </h5>
                 </div>
               </Fade>

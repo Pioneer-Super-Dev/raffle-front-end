@@ -13,7 +13,7 @@ const Follow = () => {
           <div className="col-md-12">
             <div style={{ textAlign: "center" }}>
               <a
-                href="https://twitter.com/spacekoalasnft"
+                href="https://twitter.com/soulsurvivors"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -24,7 +24,7 @@ const Follow = () => {
                 />
               </a>
               <a
-                href="https://discord.gg/5HQ8tyYS"
+                href="https://discord.gg/soulsurvivors"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -35,7 +35,7 @@ const Follow = () => {
                 />
               </a>
               <a
-                href="https://opensea.io/collection/spacekoalasnft"
+                href="https://opensea.io/collection/soulsurvivors"
                 target={"_blank"}
                 rel="noreferrer"
               >

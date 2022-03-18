@@ -24,9 +24,8 @@ const Portfolio = () => {
             />
             <br />
             <h3 className="mt-5">
-              Are you your koala's best friend? Your koala has the chance to go
-              into space and wants to take his best friend with him. Are you his
-              best friend?
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+              dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h3>
             <button
               className="btn portofolio_connect_btn"

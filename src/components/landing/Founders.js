@@ -33,7 +33,7 @@ const Founders = () => {
                 marginBottom: "51px",
               }}
             >
-              The Space Koalas Founders
+              The Soul Survivors Founders
             </h1>
           </div>
         </Fade>
