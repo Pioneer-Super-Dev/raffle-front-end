@@ -92,7 +92,7 @@ const Roadmap = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Release date announcement
+                    Release of $Soul Token
                     <br />
                   </h3>
                   <h5
@@ -101,7 +101,7 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    Dec 17, 2021
                     <br />
                   </h5>
                 </div>
@@ -126,7 +126,7 @@ const Roadmap = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Release
+                    Release of Soul Survivors
                     <br />
                   </h3>
                   <h5
@@ -135,35 +135,7 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                     <br />
-                  </h5>
-                </div>
-              </Fade>
-              <Fade bottom>
-                <div
-                  className="d-xxl-flex"
-                  data-aos="fade-up"
-                  style={{
-                    width: "auto",
-                    height: "auto",
-                    padding: "23px",
-                    background: "#523f76",
-                    borderRadius: "10px",
-                    margin: "10px",
-                  }}
-                >
-                  <h5
-                    style={{
-                      fontWeight: "bold",
-                      fontFamily: "'Comic Neue', serif",
-                    }}
-                  >
-                    Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget
-                    consectetur sed, convallis at tellus. Vestibulum ante ipsum
-                    primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Donec velit neque, auctor sit amet aliquam vel,
-                    ullamcorper sit amet ligula.
                   </h5>
                 </div>
               </Fade>
@@ -187,7 +159,7 @@ const Roadmap = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Reward System
+                    Releasing of Seasons
                     <br />
                   </h3>
                   <h5
@@ -196,36 +168,8 @@ const Roadmap = () => {
                       fontFamily: "'Comic Neue', serif",
                     }}
                   >
-                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                    amet dui. Donec rutrum congue leo eget malesuada. Nulla quis
-                    lorem ut libero malesuada feugiat. Vestibulum ac diam sit
-                    amet quam vehicula elementum sed sit amet dui. Curabitur
-                    arcu erat, accumsan id imperdiet et, porttitor at sem.
-                  </h5>
-                </div>
-              </Fade>
-              <Fade bottom>
-                <div
-                  className="d-xxl-flex"
-                  data-aos="fade-up"
-                  style={{
-                    width: "auto",
-                    height: "auto",
-                    padding: "23px",
-                    background: "#523f76",
-                    borderRadius: "10px",
-                    margin: "10px",
-                  }}
-                >
-                  <h5
-                    style={{
-                      fontWeight: "bold",
-                      fontFamily: "'Comic Neue', serif",
-                    }}
-                  >
-                    Pellentesque in ipsum id orci porta dapibus. Pellentesque in
-                    ipsum id orci porta dapibus. Nulla porttitor accumsan
-                    tincidunt.
+                    We will release a new season with new maps and
+                    characters/variations every quarter.
                   </h5>
                 </div>
               </Fade>

@@ -44,25 +44,13 @@ const Collection = () => {
                   textShadow: "1px 1px var(--bs-blue)",
                 }}
               >
-                Benefits
+                Grow your stable!
                 <br />
               </h5>
               <p>
-                Curabitur non nulla sit amet nisl tempus convallis quis ac
-                lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum
-                ac diam sit amet quam vehicula elementum sed sit amet dui.
-                Curabitur aliquet quam id dui posuere blandit. <br />
+                Purchase new and exciting characters to enhance you’re your
+                playing experience
                 <br />
-                Curabitur non nulla sit amet nisl tempus convallis quis ac
-                lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum
-                ac diam sit amet quam vehicula elementum sed sit amet dui.
-                Curabitur aliquet quam id dui posuere blandit. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec velit neque, auctor sit amet aliquam vel,
-                ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl
-                tempus convallis quis ac lectus. Donec rutrum congue leo eget
-                malesuada. Vivamus suscipit tortor eget felis porttitor
-                volutpat.
               </p>
               <h5
                 style={{
@@ -75,38 +63,21 @@ const Collection = () => {
                 <br />
               </h5>
               <p>
-                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
-                tincidunt.
+                Each season sees new characters that are added to the game as
+                each variation of NFT characters are minted in limited amounts
+                which depend on its rarity.Each season sees new characters that
+                are added to the game as each variation of NFT characters are
+                minted in limited amounts which depend on its rarity.
                 <br />
               </p>
-              <h5
-                style={{
-                  color: "#10f2d7",
-                  fontWeight: "bold",
-                  textShadow: "1px 1px var(--bs-blue)",
-                }}
-              >
-                Rewards for holders
-                <br />
-              </h5>
               <p>
-                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
-                tincidunt.
-                <br />
-              </p>
-              <h5
-                style={{
-                  color: "#10f2d7",
-                  fontWeight: "bold",
-                  textShadow: "1px 1px var(--bs-blue)",
-                }}
-              >
-                Grow your NFT
-                <br />
-              </h5>
-              <p>
-                Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
-                tincidunt.
+                NFT value can be increased by the following character
+                customizations:
+                <br />- Animations
+                <br /> - Boosters
+                <br /> - Effects
+                <br /> - Emotes
+                <br /> - Fusion
               </p>
             </div>
           </div>

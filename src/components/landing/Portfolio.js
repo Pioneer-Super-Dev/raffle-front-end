@@ -24,8 +24,9 @@ const Portfolio = () => {
             />
             <br />
             <h3 className="mt-5">
-              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-              dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Soul Survivors is an exciting free-for-all massively multiplayer
+              style obstacle course featuring 32 players per session and is
+              gameshow based.
             </h3>
             <button
               className="btn portofolio_connect_btn"
